@@ -36,86 +36,109 @@
   	<header class="catalog-header">
       <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
       <!--спан использую для отрисовки ромбиков-->
-      <p>Glavnaja <span></span>
-         Shop <span></span>
-         Sredstva dla uhoda</p>
+      <div class="breadcrumbs">
+        <p>Glavnaja <span></span>
+           Shop <span></span>
+           Sredstva dla uhoda</p>
+      </div>
     </header>
 
     <section class="catalog-filter">
-      <p class="catalog-filter-brand"></p>
-      <ul class="catalog-filter-brand">
-        <li><a href="#">BAXTER OF CALIFORNIA</a></li>
-        <li><a href="#">MR NATTY</a></li>
-        <li><a href="#">SUAVECITO</a></li>
-        <li><a href="#">MALIN+GOETZ</a></li>
-        <li><a href="#">MYRRAY'S</a></li>
-        <li><a href="#">AMERICAN CREW</a></li>
-      </ul>
-      <p class="catalog-filter-type"></p>
-      <ul class="catalog-filter-type">
-        <li><a href="#">Бритвенные принадлежности</a></li>
-        <li><a href="#">Средства для ухода</a></li>
-        <li><a href="#">Аксессуары</a></li>
-      </ul>
+      
+      <form action="#" method="post">
+        <p class="catalog-filter-brand">ПРОИЗВОДИТЕЛИ:</p>
+
+        <input type="checkbox" id="brand-1">
+        <label for="brand-1">BAXTER OF CALIFORNIA</label>
+
+        <input type="checkbox" id="brand-2">
+        <label for="brand-2">MR NATTY</label>
+
+        <input type="checkbox" id="brand-3">
+        <label for="brand-3">SUAVECITO</label>
+
+        <input type="checkbox" id="brand-4">
+        <label for="brand-4">MALIN+GOETZ</label>
+
+        <input type="checkbox" id="brand-5">
+        <label for="brand-5">MYRRAY'S</label>
+
+        <input type="checkbox" id="brand-6">
+        <label for="brand-6">AMERICAN CREW</label>
+        
+        <p class="catalog-filter-type">ГРУППЫ ТОВАРОВ:</p>
+
+        <input type="checkbox" id="type-1">
+        <label for="type-1">Бритвенные принадлежности</label>
+
+        <input type="checkbox" id="type-2">
+        <label for="type-2">Средства для ухода</label>
+
+        <input type="checkbox" id="type-3">
+        <label for="type-3">Аксессуары</label>
+
+
+        <input type="submit" value="Показать">
+      </form>
     </section>
 
     <section class="catalog-gallery">
-    	<div class="catalog-gallery-item catalog-gallery-item-1">
+    	<article class="catalog-gallery-item catalog-gallery-item-1">
     		<img src="http://placehold.it/150x100">
     		<p class="type">Набор для путешествий</p>
     		<p class="brand">"BAXTER OF CALIFORNIA"</p>
     		<p class="price">2 900</p>
     		<a class="btn" href="#">КУПИТЬ</a>
-    	</div>
+    	</article>
 
-    	<div class="catalog-gallery-item catalog-gallery-item-2">
+    	<article class="catalog-gallery-item catalog-gallery-item-2">
     		<img src="http://placehold.it/150x100">
     		<p class="type">Увлажняющий кондиционер</p>
     		<p class="brand">"BAXTER OF CALIFORNIA"</p>
     		<p class="price">750</p>
     		<a class="btn" href="#">КУПИТЬ</a>
-    	</div>
+    	</article>
 
-    	<div class="catalog-gallery-item catalog-gallery-item-3">
+    	<article class="catalog-gallery-item catalog-gallery-item-3">
     		<img src="http://placehold.it/150x100">
     		<p class="type">Гель для волос</p>
     		<p class="brand">«SUAVECITO»</p>
     		<p class="price">290</p>
     		<a class="btn" href="#">КУПИТЬ</a>
-    	</div>
+    	</article>
 
-    	<div class="catalog-gallery-item catalog-gallery-item-4">
+    	<article class="catalog-gallery-item catalog-gallery-item-4">
     		<img src="http://placehold.it/150x100">
     		<p class="type">Глина для укладки волос</p>
     		<p class="brand">"AMERICAN CREW"</p>
     		<p class="price">500</p>
     		<a class="btn" href="#">КУПИТЬ</a>
-    	</div>
+    	</article>
 
-    	<div class="catalog-gallery-item catalog-gallery-item-5">
+    	<article class="catalog-gallery-item catalog-gallery-item-5">
     		<img src="http://placehold.it/150x100">
     		<p class="type">Гель для волос</p>
     		<p class="brand">"AMERICAN CREW"</p>
     		<p class="price">300</p>
     		<a class="btn" href="#">КУПИТЬ</a>
-    	</div>
+    	</article>
 
-    	<div class="catalog-gallery-item catalog-gallery-item-6">
+    	<article class="catalog-gallery-item catalog-gallery-item-6">
     		<img src="http://placehold.it/150x100">
     		<p class="type">Набор для бритья</p>
     		<p class="brand">"BAXTER OF CALIFORNIA"</p>
     		<p class="price">3900</p>
     		<a class="btn" href="#">КУПИТЬ</a>
-    	</div>
+    	</article>
 
-    	<div class="catalog-gallery-page">
+    	<article class="catalog-gallery-page">
     		<ul>
     			<li><a href="#">1</a></li>
     			<li><a href="#">2</a></li>
     			<li><a href="#">3</a></li>
     			<li><a href="#">4</a></li>
     		</ul>
-    	</div>
+    	</article>
 
     	
     </section>
