@@ -3,53 +3,69 @@
 <head>
   <meta charset="utf-8">
   <title>Барбершоп «Бородинский»</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
-      <div class="container">
+    <div class="container clearfix">
+      <nav class="main-navigation">
         <div class="logo">
-          <img src="img/logo.jpg">
+          <a href="#">
+            <img src="img/logo.jpg">
+          </a>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Прайс-лист</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="login" href="#">Вход</a>
-        </div>
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Вход</a>
       </div>
+    </div>
   </header>
 
-  <main class="container">
-    
-    <header class="item-header">
-      <h1>набор для путешествий «Baxter of California»</h1>
-      <!--спан использую для отрисовки ромбиков-->
-      <div class="breadcrumbs">Glavnaja <span></span>
-         Magazin <span></span>
-         Sredstva dlja yhoda <span></span>
-         набор для путешествий «Baxter of California»</div>
-    </header>
+  <main>
+    <div class="container clearfix">
 
-    <section class="item-gallery">
-      <figure class="item-gallery-main">
-        <img src="img/itemchoosen.jpg" alt="travel-kit-photo-1"> 
-      </figure>
+      <header class="item-header">
+        <h1>набор для путешествий «Baxter of California»</h1>
+        <div class="breadcrumbs">
+         <ul>
+           <li>
+             <a href="#">Glavnaja</a>
+           </li> 
+           <li>
+             <a href="#">Magazin</a>
+           </li>
+           <li>
+             <a href="#">Sredstva dlja yhoda</a>
+           </li>
+           <li>
+             <a href="#">набор для путешествий «Baxter of California»</a>
+           </li>
+         </ul>
+       </div>
+     </header>
+
+     <section class="item-gallery">
+      <div class=item-gallery-main>
+        <img src="img/itemchoosen.jpg" alt="travel-kit-photo-1">
+      </div>
+
       <div class="item-gallery-content">
         <a href="#"><img src="img/item1.jpg" alt="travel-kit-photo-2"></a> 
         <a href="#"><img src="img/item2.jpg" alt="travel-kit-photo-3"></a>
@@ -57,10 +73,11 @@
       </div>
     </section>
 
-    <section class="item-descr">
-      <p class="item-descr-avail">есть в наличии</p>
-      <p class="item-descr-code">Артикул: dexter-ae</p>
-      <p clas="item-descr-content">
+    <section class="item-info">
+      <div class="item-descr">
+        <span class="item-descr-avail">есть в наличии</span>
+        <span class="item-descr-code">Артикул: dexter-ae</span>
+        <p clas="item-descr-content">
          Travel Kit – необходимый аксессуар во время любого
          путешествия. В аккуратной кожаной сумке находится
          все, что нужно для бритья и ухода за кожей во время
@@ -68,47 +85,46 @@
          увлажняющий крем, крем для бритья, крем после
          бритья, шампунь. Набор также может стать отличным
          подарком.</p>
-    </section>
+       </div>
 
-    <section class="item-buy">
-      <p class="item-buy-price">2 900 РУБ.</p>
-      <!--кнопка - добавляет товар в корзину -->
-      <!-- changed Нам нужен активный элемент-->
-      <a href="#" class="item-buy-btn">buy</a>
-    </section>
-
-    <section class="item-contain">
-      <p class="item-contain-title">V nabor vhodjat</p>
-      <ul>
-        <li>Средство для умывания (50 мл)</li>
-        <li>Увлажняющий крем (50 мл)</li>
-        <li>Крем для бритья (50 мл)</li>
-        <li>Крем после бритья, шампунь (50 мл)</li>
-        <li>Удобная кожаная косметичка</li>
-      </ul>
-    </section>
-    
-  </main>
-
-  <footer class="main-footer">
-      <div class="container">
-        <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
-        </section>
-        <section class="footer-social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
+       <div class="item-buy">
+        <span class="item-buy-price">2 900 РУБ.</span>
+        <a href="#" class="item-buy-btn">buy</a>
       </div>
-    </footer>
+
+      <div class="item-contain">
+        <p class="item-contain-title">V nabor vhodjat</p>
+        <ul>
+          <li>Средство для умывания (50 мл)</li>
+          <li>Увлажняющий крем (50 мл)</li>
+          <li>Крем для бритья (50 мл)</li>
+          <li>Крем после бритья, шампунь (50 мл)</li>
+          <li>Удобная кожаная косметичка</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="main-footer">
+  <div class="container clearfix">
+    <section class="footer-contacts">
+      Барбершоп «Бородинский»<br>
+      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      <a href="#">Как нас найти?</a><br>
+      Телефон: +7 (812) 666-02-66
+    </section>
+    <section class="footer-social">
+      <p>Давайте дружить!</p>
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+    </section>
+    <section class="footer-copyright">
+      <p>Разработано:</p>
+      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+    </section>
+  </div>
+</footer>
 </body>
 </html>
